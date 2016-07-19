@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.version       = OmniAuth::Dobt::VERSION
 
   gem.add_dependency 'omniauth', '~> 1.0'
-  # Nothing lower than omniauth-oauth2 1.1.1
-  # http://www.rubysec.com/advisories/CVE-2012-6134/
-  gem.add_dependency 'omniauth-oauth2', '>= 1.1.1', '< 2.0'
+
+  # https://github.com/intridea/omniauth-oauth2/issues/81
+  gem.add_dependency 'omniauth-oauth2', '1.3.1'
 end
