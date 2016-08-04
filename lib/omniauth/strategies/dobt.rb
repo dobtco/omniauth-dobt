@@ -17,7 +17,8 @@ module OmniAuth
       extra do
         {
           remember_me: raw_info['remember_me'],
-          two_factor_enabled: raw_info['two_factor_enabled']
+          two_factor_enabled: raw_info['two_factor_enabled'],
+          email_confirmed: raw_info['email_confirmed']
         }
       end
 
